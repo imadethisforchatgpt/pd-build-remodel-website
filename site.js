@@ -247,8 +247,10 @@
       var index = modals.indexOf(modal);
       var counter = modal.querySelector('.modal-count');
       if (counter) counter.textContent = (index + 1) + ' / ' + modals.length;
-      modal.querySelector('[data-photo-step="-1"]').disabled = index === 0;
-      modal.querySelector('[data-photo-step="1"]').disabled = index === modals.length - 1;
+      var prevButton = modal.querySelector('[data-photo-step="-1"]');
+      var nextButton = modal.querySelector('[data-photo-step="1"]');
+      if (prevButton) prevButton.disabled = index === 0;
+      if (nextButton) nextButton.disabled = index === modals.length - 1;
       // Load the real image; do not animate the modal or clone low-resolution thumbnails.
       var image = modal.querySelector('img');
       if (image) image.loading = 'eager';
