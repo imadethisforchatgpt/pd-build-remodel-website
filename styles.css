@@ -392,3 +392,9 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-drawer-reveal{z-index:1!important;backface-visibility:hidden;-webkit-backface-visibility:hidden}
 .cabinet-shell.drawer-open .cabinet-drawer-reveal{transform:translate(-50%,-18px) scale(1)}
 @media(prefers-reduced-motion:reduce){.cabinet-drawer-reveal{transition:none!important}}
+
+/* Door inscription appears only after the doors have opened. */
+.cabinet-dishes{opacity:0!important;visibility:hidden!important;transition:opacity .28s ease,visibility 0s linear .28s!important;pointer-events:none!important;}
+.cabinet-shell.is-open .cabinet-dishes{opacity:1!important;visibility:visible!important;transition:opacity .4s ease .75s,visibility 0s linear 0s!important;}
+.cabinet-shell:not(.is-open) .cabinet-dishes{opacity:0!important;visibility:hidden!important;}
+@media(prefers-reduced-motion:reduce){.cabinet-shell.is-open .cabinet-dishes{transition:none!important}}
