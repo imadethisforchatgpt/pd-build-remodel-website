@@ -366,3 +366,8 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-shell.drawer-open .cabinet-drawer-reveal{visibility:visible;opacity:1;transform:translate(-50%,-17px) scale(1);transition-delay:.15s}
 @media(max-width:760px){.cabinet-drawer-reveal{gap:5px;padding:5px 6px;width:min(78%,210px)}.cabinet-drawer-reveal img{width:37px;height:30px}.cabinet-drawer-reveal strong{font-size:15px}.cabinet-drawer-reveal small{font-size:6px}}
 @media(prefers-reduced-motion:reduce){.cabinet-drawer-reveal{transition:none!important}}
+/* Drawer branding: logo only; remove the old plaque and duplicate wording. */
+.cabinet-drawer-reveal{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;width:min(72%,230px)!important;min-height:0!important;gap:0!important;}
+.cabinet-drawer-reveal img{width:100%!important;height:auto!important;max-height:150px;object-fit:contain;mix-blend-mode:screen;filter:none!important;}
+.cabinet-drawer-reveal span{display:none!important;}
+@media(max-width:760px){.cabinet-drawer-reveal{width:min(75%,190px)!important}.cabinet-drawer-reveal img{width:100%!important;height:auto!important}}
