@@ -366,3 +366,44 @@
 
 /* Filter portfolio photographs without loading another page. */
 (function(){function init(){var controls=document.querySelectorAll('.portfolio-filter-btn');var items=document.querySelectorAll('.gallery-grid .gallery-item[data-category]');controls.forEach(function(btn){btn.addEventListener('click',function(){var category=btn.getAttribute('data-filter');controls.forEach(function(b){var active=b===btn;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});items.forEach(function(item){item.hidden=category!=='all'&&item.getAttribute('data-category')!==category;});});});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();})();
+
+/* Project inquiry: generate a customer-reviewed email draft without a backend. */
+(function () {
+  'use strict';
+  function initProjectInquiry() {
+    var form = document.getElementById('pd-quote-form');
+    if (!form) return;
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      var fields = new FormData(form);
+      var get = function (key) { return String(fields.get(key) || '').trim(); };
+      var subject = 'P&D Project Quote Request - ' + get('project');
+      var photos = form.querySelector('#quote-photo');
+      var lines = [
+        'New project inquiry for P&D Build&Remodel',
+        '',
+        'Name: ' + get('name'),
+        'Email: ' + get('email'),
+        'Phone: ' + (get('phone') || 'Not provided'),
+        'Project ZIP code: ' + get('zip'),
+        'Project type: ' + get('project'),
+        '',
+        'Project details:',
+        get('details'),
+        '',
+        '3D studio design: ' + (document.getElementById('quote-design-value')?.textContent.trim() || 'None'),
+        '',
+        photos && photos.files.length ? 'Photos selected: ' + photos.files.length + ' (please attach manually before sending)' : 'No photos selected',
+        '',
+        'Sent from the P&D website project inquiry form.'
+      ];
+      var url = 'mailto:info@pdbuildremodel.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+      var status = document.getElementById('quote-status');
+      if (status) status.textContent = 'Your email app should open with the project details filled in. Review the draft and tap Send. If no app opens, email info@pdbuildremodel.com directly.';
+      window.location.href = url;
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initProjectInquiry, { once: true });
+  else initProjectInquiry();
+})();
