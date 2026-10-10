@@ -367,37 +367,17 @@
 /* Filter portfolio photographs without loading another page. */
 (function(){function init(){var controls=document.querySelectorAll('.portfolio-filter-btn');var items=document.querySelectorAll('.gallery-grid .gallery-item[data-category]');controls.forEach(function(btn){btn.addEventListener('click',function(){var category=btn.getAttribute('data-filter');controls.forEach(function(b){var active=b===btn;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});items.forEach(function(item){item.hidden=category!=='all'&&item.getAttribute('data-category')!==category;});});});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();})();
 
-/* Native project inquiry delivery: JavaScript validates file sizes only.
-   Valid forms submit through the HTML form action, even when JS is unavailable. */
+/* Formspree project inquiry: allow the browser to submit the native HTML form. */
 (function () {
   'use strict';
-  function initNativeInquiry() {
+  function initInquiry() {
     var form = document.getElementById('pd-quote-form');
-    if (!form) return;
-    var photo = document.getElementById('quote-photo');
     var status = document.getElementById('quote-status');
-    var defaultStatus = status ? status.textContent : '';
-    function checkFiles() {
-      if (!photo) return true;
-      var files = Array.from(photo.files || []);
-      var bytes = files.reduce(function (total, file) { return total + file.size; }, 0);
-      var tooLarge = bytes > 10 * 1024 * 1024;
-      photo.setCustomValidity(tooLarge ? 'Your photos total more than 10 MB. Please choose smaller photos, or submit without photos and text them to P&D.' : '');
-      if (status) status.textContent = tooLarge
-        ? 'Selected photos exceed the 10 MB upload limit. Please choose smaller photos, or remove them and send the pictures by text.'
-        : defaultStatus;
-      return !tooLarge;
-    }
-    if (photo) photo.addEventListener('change', checkFiles);
-    form.addEventListener('submit', function (event) {
-      if (!checkFiles()) {
-        event.preventDefault();
-        form.reportValidity();
-        return;
-      }
-      if (status) status.textContent = 'Submitting your project request. Please complete the security check if prompted.';
+    if (!form || !status) return;
+    form.addEventListener('submit', function () {
+      if (form.checkValidity()) status.textContent = 'Submitting your project request securely through Formspree…';
     });
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initNativeInquiry, { once: true });
-  else initNativeInquiry();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initInquiry, { once: true });
+  else initInquiry();
 })();
