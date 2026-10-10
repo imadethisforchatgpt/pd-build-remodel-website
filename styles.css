@@ -379,3 +379,16 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-drawer-reveal img{display:block!important;width:100%!important;max-width:160px!important;height:105px!important;max-height:105px!important;object-fit:contain!important;}
 .cabinet-drawer-brand{display:none!important;}
 @media(max-width:760px){.cabinet-drawer-reveal{width:130px!important;max-width:45%!important}.cabinet-drawer-reveal img{height:95px!important;max-height:95px!important}}
+
+/* Cabinet interaction stability: keep moving pieces in a single 2D stacking plane on iOS Safari. */
+.cabinet-shell{transform-style:flat;isolation:isolate}
+.cabinet-interior{z-index:1}
+.cabinet-door{z-index:3;backface-visibility:hidden;-webkit-backface-visibility:hidden;will-change:transform}
+.cabinet-shell.is-open .cabinet-left{transform:perspective(900px) rotateY(-105deg)}
+.cabinet-shell.is-open .cabinet-right{transform:perspective(900px) rotateY(105deg)}
+.cabinet-drawer{z-index:4;transform-style:flat;will-change:transform}
+.cabinet-shell.drawer-open .cabinet-drawer{transform:translateY(22px)}
+.cabinet-drawer-inside{display:none}
+.cabinet-drawer-reveal{z-index:1!important;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.cabinet-shell.drawer-open .cabinet-drawer-reveal{transform:translate(-50%,-18px) scale(1)}
+@media(prefers-reduced-motion:reduce){.cabinet-drawer-reveal{transition:none!important}}
