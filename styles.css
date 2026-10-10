@@ -398,3 +398,6 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-shell.is-open .cabinet-dishes{opacity:1!important;visibility:visible!important;transition:opacity .4s ease .75s,visibility 0s linear 0s!important;}
 .cabinet-shell:not(.is-open) .cabinet-dishes{opacity:0!important;visibility:hidden!important;}
 @media(prefers-reduced-motion:reduce){.cabinet-shell.is-open .cabinet-dishes{transition:none!important}}
+
+/* Compact category browsing for the project gallery */
+.portfolio-filter{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px}.portfolio-filter-btn{font:inherit;cursor:pointer;border:1px solid rgba(170,185,204,.35);background:transparent;color:inherit;border-radius:999px;padding:10px 16px;transition:background .2s,border-color .2s}.portfolio-filter-btn.active,.portfolio-filter-btn:hover{background:#bb9558;color:#111c29;border-color:#bb9558}.gallery-item[hidden]{display:none!important}
