@@ -363,3 +363,6 @@
 
 /* Show the maker mark emerging above the opened drawer; front stays plain. */
 (function(){var s=document.createElement('style');s.textContent='.cabinet-drawer-face{overflow:visible!important}.cabinet-drawer-brand{display:flex!important;bottom:calc(100% + 2px);opacity:0;visibility:hidden;transform:translate(-50%,65px);transition:transform .7s ease,opacity .35s,visibility .7s}.cabinet-shell.drawer-open .cabinet-drawer-brand{opacity:1;visibility:visible;transform:translate(-50%,-18px)}';document.head.appendChild(s)})();
+
+/* Filter portfolio photographs without loading another page. */
+(function(){function init(){var controls=document.querySelectorAll('.portfolio-filter-btn');var items=document.querySelectorAll('.gallery-grid .gallery-item[data-category]');controls.forEach(function(btn){btn.addEventListener('click',function(){var category=btn.getAttribute('data-filter');controls.forEach(function(b){var active=b===btn;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});items.forEach(function(item){item.hidden=category!=='all'&&item.getAttribute('data-category')!==category;});});});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();})();
