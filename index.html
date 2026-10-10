@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
-<html data-version="2026.10.10-studio-v2" lang="en">
+<html data-version="2026.10.10-v3-clean" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
@@ -13,11 +14,11 @@
 <meta content="Real projects. Thoughtful craftsmanship. Explore kitchen, bathroom and custom pantry transformations across Central Texas." property="og:description"/>
 <meta content="website" property="og:type"/>
 <link href="styles.css" rel="stylesheet"/>
-<link href="studio.css" rel="stylesheet"/>
+
 <link href="assets/favicon.png" rel="icon" type="image/png"/>
 <meta content="dark" name="color-scheme"/>
 <meta content="telephone=no" name="format-detection"/>
-<script defer src="studio.js"></script>
+
 <script defer="True" src="site.js">
 </script>
 </head>
@@ -53,9 +54,7 @@
 </span>
 </a>
 <nav aria-label="Main navigation" class="nav">
-<a href="#studio">
-      Design studio
-     </a>
+<a href="#cabinet-experience">Custom cabinetry</a>
 <a href="#showroom">
       Showroom
      </a>
@@ -81,7 +80,7 @@
      Explore P&amp;D
     </summary>
 <nav aria-label="Small-screen navigation">
-<a href="#studio">Design studio</a>
+<a href="#cabinet-experience">Custom cabinetry</a>
 <a href="#showroom">
       Showroom
      </a>
@@ -110,15 +109,13 @@
 </div>
 <div class="container hero-content">
 <div class="eyebrow">P&amp;D BUILD&amp;REMODEL  /  CENTRAL TEXAS</div>
-<h1 data-motion="heading">WE DON’T JUST <em>REMODEL.</em><br/>WE TRANSFORM.</h1>
+<div aria-label="P&amp;D Build and Remodel. Precision and Design." class="hero-brand-lockup"><img alt="P&amp;D Build&amp;Remodel official logo" decoding="async" height="412" loading="eager" src="assets/pd-logo.png" width="500"/><div class="hero-brand-words"><strong>P&amp;D BUILD&amp;REMODEL</strong><span>PRECISION &amp; DESIGN</span></div></div><h1 data-motion="heading">WE DON’T JUST <em>REMODEL.</em><br/>WE TRANSFORM.</h1>
 <p data-motion="copy">Real craftsmanship. Real transformations. Designed with precision, built to make an impression.</p>
 <div class="actions">
 <a class="button" href="#work">
        Explore our transformations ↓
       </a>
-<a class="button outline" href="#studio">
-       Design your kitchen ↗
-      </a>
+<a class="button outline" href="#showroom">See our real projects ↗</a>
 </div><div aria-hidden="true" class="cinema-scroll-cue"><span></span>SCROLL TO EXPERIENCE THE TRANSFORMATION</div>
 </div>
 </section>
@@ -183,41 +180,6 @@
 </div>
 </div>
 </div>
-</section>
-
-<section id="studio" class="studio-section" aria-labelledby="studio-heading">
-  <div class="container">
-    <div class="studio-topline"><span class="section-label">THE P&amp;D DESIGN EXPERIENCE / 01</span><span class="studio-top-badge">INTERACTIVE · 3D</span></div>
-    <div class="studio-heading">
-      <div><h2 id="studio-heading" class="section-title">Your vision.<br><em>Your custom kitchen.</em></h2><p class="body-copy">Explore a 3D kitchen, change the cabinetry, countertops, hardware and more. Save your design and bring it to your consultation.</p></div>
-      <div class="studio-heading-stamp">MADE FOR<br><strong>YOUR VISION</strong><span>PRECISION &amp; DESIGN</span></div>
-    </div>
-    <div class="studio-shell">
-      <div class="studio-visual">
-        <div class="studio-viewport" id="studio-viewport">
-          <canvas id="kitchen-canvas" aria-label="Rotatable three-dimensional kitchen preview with selected cabinetry, countertop, and backsplash" role="img" width="960" height="650">3D kitchen design preview. Use the design options to customize your selections.</canvas>
-          <div class="studio-viewport-top"><span class="studio-live"><i></i> LIVE DESIGN PREVIEW</span><span id="studio-scene-label">L-shaped / island</span></div>
-          <div class="studio-viewport-bottom"><span>↔ DRAG TO ROTATE &nbsp; · &nbsp; SCROLL TO ZOOM</span><span>CONCEPT VISUALIZATION</span></div>
-        </div>
-        <div class="studio-visual-actions"><div class="studio-view-buttons"><button type="button" id="studio-view-left" aria-label="Rotate kitchen view left">↶ Rotate</button><button type="button" id="studio-view-reset">↗ Reset view</button><button type="button" id="studio-view-right" aria-label="Rotate kitchen view right">Rotate ↷</button></div><button type="button" id="studio-light-toggle" aria-pressed="true">✦ Lighting on</button></div>
-        <div class="studio-brief"><span class="studio-brief-kicker">YOUR CURRENT SELECTIONS</span><p id="studio-design-summary" aria-live="polite">Shaker · Sage green · White quartz · Brass pulls</p><div class="studio-brief-actions"><button type="button" id="studio-copy-design">Copy design brief ↗</button><button type="button" id="studio-save-design">Save design ↗</button><button type="button" id="studio-request-design" class="studio-primary">REQUEST THIS LOOK ↗</button></div><p class="studio-feedback" id="studio-feedback" role="status" aria-live="polite"></p></div>
-      </div>
-      <div class="studio-config" aria-label="Kitchen design options">
-        <div class="studio-config-head"><span>01 — DESIGN YOUR SPACE</span><button type="button" id="studio-reset-design">Reset selections ↗</button></div>
-        <div class="studio-option"><label for="studio-layout">KITCHEN LAYOUT</label><select id="studio-layout"><option value="l">L-shaped kitchen</option><option value="u">U-shaped kitchen</option><option value="galley">Galley kitchen</option><option value="single">Single-wall kitchen</option></select></div>
-        <div class="studio-option studio-inline"><label for="studio-island">ADD AN ISLAND</label><input type="checkbox" id="studio-island" checked><span>Island included</span></div>
-        <div class="studio-option"><label for="studio-door">DOOR STYLE</label><select id="studio-door"><option value="shaker">Classic Shaker</option><option value="slim">Slim Shaker</option><option value="slab">Modern slab</option><option value="raised">Raised panel</option><option value="recessed">Detailed recessed panel</option><option value="cathedral">Cathedral / arched</option><option value="beadboard">Beadboard</option><option value="fluted">Fluted / textured</option><option value="glass">Glass insert</option><option value="custom">Custom / inspiration photo</option></select><div class="studio-custom" id="studio-custom" hidden><label for="studio-custom-note">DESCRIBE YOUR DREAM DOOR</label><textarea id="studio-custom-note" rows="2" placeholder="Describe the door or paste an inspiration link..."></textarea><label class="studio-upload" for="studio-inspiration">Select reference photo (for your consultation)</label><input id="studio-inspiration" type="file" accept="image/*"><small id="studio-upload-note">Your photo stays on your device. Attach it yourself when emailing P&amp;D.</small></div></div>
-        <div class="studio-option"><label for="studio-finish">CABINET COLOR / WOOD FINISH</label><div class="studio-swatches" id="studio-swatches" aria-label="Choose cabinet finish"></div><select id="studio-finish"><option value="sage">Evergreen sage</option><option value="graphite">Graphite charcoal</option><option value="navy">Deep navy</option><option value="ivory">Warm ivory</option><option value="white">Clean white</option><option value="oak">Natural oak</option><option value="walnut">Dark walnut</option><option value="clay">Warm clay</option></select></div>
-        <div class="studio-option"><label for="studio-counter">COUNTERTOP MATERIAL</label><select id="studio-counter"><option value="quartz">Soft white quartz</option><option value="calacatta">Calacatta-style quartz</option><option value="granite">Dark granite</option><option value="quartzite">Warm quartzite</option><option value="wood">Butcher block</option><option value="concrete">Concrete-look</option></select></div>
-        <div class="studio-option"><label for="studio-edge">COUNTERTOP EDGE PROFILE</label><select id="studio-edge"><option value="eased">Eased / square</option><option value="bevel">Beveled</option><option value="bullnose">Bullnose</option><option value="ogee">Ogee decorative</option><option value="mitered">Thick mitered look</option></select></div>
-        <div class="studio-option"><label for="studio-hardware">HANDLES / KNOBS</label><select id="studio-hardware"><option value="brass">Brushed brass pulls</option><option value="black">Matte black pulls</option><option value="nickel">Brushed nickel pulls</option><option value="knob">Classic brass knobs</option><option value="none">No visible hardware</option></select></div>
-        <div class="studio-option"><label for="studio-backsplash">BACKSPLASH STYLE</label><select id="studio-backsplash"><option value="subway">Classic subway tile</option><option value="herringbone">Herringbone</option><option value="zellige">Handmade-look tile</option><option value="slab">Full-height stone-look slab</option><option value="dark">Dark dramatic tile</option><option value="none">Simple painted wall</option></select></div>
-        <div class="studio-option"><label for="studio-organizer">PULL-OUTS &amp; ORGANIZERS</label><select id="studio-organizer"><option value="drawers">Deep storage drawers</option><option value="spice">Spice pull-out</option><option value="trash">Hidden trash pull-out</option><option value="pantry">Tall pantry organizers</option><option value="corner">Corner organizer</option><option value="none">Standard shelving</option></select></div>
-        <div class="studio-option studio-inline"><label for="studio-led">UNDER-CABINET LEDs</label><input type="checkbox" id="studio-led" checked><span>Warm LED strip lighting</span></div>
-        <p class="studio-disclaimer">Design inspiration only. Colors, profiles, cabinetry construction, materials and availability are confirmed during consultation. No automatic pricing.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="services-section" id="services">
@@ -440,8 +402,8 @@
 </div>
 </section>
 <section aria-labelledby="cabinet-title" class="cabinet-experience" id="cabinet-experience">
-<div class="container cabinet-experience-grid"><div class="cabinet-story"><span class="section-label">02 / MADE TO OPEN</span><h2 id="cabinet-title">NOT JUST CABINETS.<br/><em>CRAFTSMANSHIP YOU CAN FEEL.</em></h2><p>Take a closer look at the details that make custom cabinetry special. Tap the doors to open the display, and pull the drawer to see the storage within.</p><div class="cabinet-controls"><button aria-pressed="false" class="button" id="cabinet-toggle" type="button">OPEN THE CABINET ↗</button><button aria-pressed="false" class="button outline" id="drawer-toggle" type="button">PULL THE DRAWER ↗</button></div><small class="cabinet-disclaimer">Interactive illustration of Shaker-style cabinetry — explore actual completed projects below.</small></div>
-<div class="cabinet-display"><div class="cabinet-glow"></div><div class="cabinet-shell" id="cabinet-shell"><div class="cabinet-interior"><div class="cabinet-shelf"></div><div class="cabinet-dishes">P&amp;D</div><div class="cabinet-interior-bottom"></div></div><div class="cabinet-door cabinet-left"><div class="cabinet-panel"></div><div class="cabinet-handle"></div></div><div class="cabinet-door cabinet-right"><div class="cabinet-panel"></div><div class="cabinet-handle"></div></div><div class="cabinet-drawer"><div class="cabinet-drawer-face"><div class="cabinet-drawer-panel"></div><div class="cabinet-drawer-pull"></div></div><div class="cabinet-drawer-inside"></div></div></div></div></div>
+<div class="container cabinet-experience-grid"><div class="cabinet-story"><span class="section-label">02 / MADE TO OPEN</span><h2 id="cabinet-title">NOT JUST CABINETS.<br><em>CRAFTSMANSHIP YOU CAN FEEL.</em></br></h2><p>Take a closer look at the details that make custom cabinetry special. Tap the doors to open the display, and pull the drawer to see the storage within.</p><div class="cabinet-controls"><button aria-pressed="false" class="button" id="cabinet-toggle" type="button">OPEN THE CABINET ↗</button><button aria-pressed="false" class="button outline" id="drawer-toggle" type="button">PULL THE DRAWER ↗</button></div><small class="cabinet-disclaimer">Interactive illustration of Shaker-style cabinetry — explore actual completed projects below.</small></div>
+<div class="cabinet-display"><div class="cabinet-glow"></div><div class="cabinet-shell" id="cabinet-shell"><div class="cabinet-interior"><div class="cabinet-shelf"></div><div class="cabinet-dishes"><span class="cabinet-stamp-title">P&amp;D</span><span class="cabinet-stamp-tagline">PRECISION &amp; DESIGN</span></div><div class="cabinet-interior-bottom"></div></div><div class="cabinet-door cabinet-left"><div class="cabinet-panel"></div><div class="cabinet-handle"></div></div><div class="cabinet-door cabinet-right"><div class="cabinet-panel"></div><div class="cabinet-handle"></div></div><div class="cabinet-drawer"><div class="cabinet-drawer-face"><div class="cabinet-drawer-panel"></div><div class="cabinet-drawer-pull"></div></div><div class="cabinet-drawer-inside"></div></div></div></div></div>
 </section><section class="craft-section" id="craft">
 <div class="container">
 <div class="section-label">
@@ -450,11 +412,11 @@
 <div class="craft-heading">
 <h2 class="section-title" data-motion="heading">
        The details you feel.
-       <br/>
+       <br>
 <em>
         The quality you see.
        </em>
-</h2>
+</br></h2>
 <p class="body-copy" data-motion="copy">
        Cabinetry is more than a beautiful door. It's thoughtful construction, accurate fit, and finishes chosen for everyday life.
       </p>
@@ -524,11 +486,10 @@
 </div>
 </section>
 <section aria-label="Precision and detail" class="cinema-marquee"><div class="cinema-marquee-track">PRECISION <span>✦</span> DESIGN <span>✦</span> BUILT TO LAST <span>✦</span> PRECISION <span>✦</span> DESIGN <span>✦</span> BUILT TO LAST <span>✦</span></div></section>
-<section id="compare" class="compare-section" aria-labelledby="compare-heading"><div class="container"><span class="section-label">THE PROOF IS IN THE TRANSFORMATION / 02</span><div class="compare-heading"><h2 class="section-title" id="compare-heading">See what a <em>difference</em> makes.</h2><p class="body-copy">Drag to explore real P&amp;D before-and-after projects. Different photo angles may not align perfectly.</p></div><div class="compare-grid">
-<article class="compare-card"><div class="compare-media" data-compare><img class="compare-after" src="assets/new-shaker-after.webp" alt="Finished P&amp;D kitchen cabinetry after refinishing" loading="lazy"><div class="compare-before-wrap"><img src="assets/new-shaker-before.webp" alt="Same kitchen before cabinetry refinishing" loading="lazy"></div><span class="compare-tag before">BEFORE</span><span class="compare-tag after">AFTER</span><div class="compare-divider" aria-hidden="true"><b>↔</b></div><input aria-label="Reveal before and after of P&D kitchen refinishing" type="range" min="0" max="100" value="50" class="compare-range"></div><div class="compare-card-caption"><div><span>01 / KITCHEN REFINISHING</span><h3>A refreshed foundation.</h3></div><p>Existing cabinetry, reimagined through a thoughtful new finish.</p></div></article>
-<article class="compare-card"><div class="compare-media" data-compare><img class="compare-after" src="assets/gray-kitchen-after.webp" alt="Completed updated kitchen with gray cabinets and new detailing" loading="lazy"><div class="compare-before-wrap"><img src="assets/gray-kitchen-before.webp" alt="Kitchen prior to P&D cabinetry update" loading="lazy"></div><span class="compare-tag before">BEFORE</span><span class="compare-tag after">AFTER</span><div class="compare-divider" aria-hidden="true"><b>↔</b></div><input aria-label="Reveal before and after of P&D gray cabinetry project" type="range" min="0" max="100" value="50" class="compare-range"></div><div class="compare-card-caption"><div><span>02 / CABINET TRANSFORMATION</span><h3>A new point of view.</h3></div><p>See the change from original cabinetry to an updated finished space.</p></div></article>
+<section aria-labelledby="compare-heading" class="compare-section" id="compare"><div class="container"><span class="section-label">THE PROOF IS IN THE TRANSFORMATION / 02</span><div class="compare-heading"><h2 class="section-title" id="compare-heading">See what a <em>difference</em> makes.</h2><p class="body-copy">Drag to explore real P&amp;D before-and-after projects. Different photo angles may not align perfectly.</p></div><div class="compare-grid">
+<article class="compare-card"><div class="compare-media" data-compare=""><img alt="Finished P&amp;D kitchen cabinetry after refinishing" class="compare-after" loading="lazy" src="assets/new-shaker-after.webp"/><div class="compare-before-wrap"><img alt="Same kitchen before cabinetry refinishing" loading="lazy" src="assets/new-shaker-before.webp"/></div><span class="compare-tag before">BEFORE</span><span class="compare-tag after">AFTER</span><div aria-hidden="true" class="compare-divider"><b>↔</b></div><input aria-label="Reveal before and after of P&amp;D kitchen refinishing" class="compare-range" max="100" min="0" type="range" value="50"/></div><div class="compare-card-caption"><div><span>01 / KITCHEN REFINISHING</span><h3>A refreshed foundation.</h3></div><p>Existing cabinetry, reimagined through a thoughtful new finish.</p></div></article>
+<article class="compare-card"><div class="compare-media" data-compare=""><img alt="Completed updated kitchen with gray cabinets and new detailing" class="compare-after" loading="lazy" src="assets/gray-kitchen-after.webp"/><div class="compare-before-wrap"><img alt="Kitchen prior to P&amp;D cabinetry update" loading="lazy" src="assets/gray-kitchen-before.webp"/></div><span class="compare-tag before">BEFORE</span><span class="compare-tag after">AFTER</span><div aria-hidden="true" class="compare-divider"><b>↔</b></div><input aria-label="Reveal before and after of P&amp;D gray cabinetry project" class="compare-range" max="100" min="0" type="range" value="50"/></div><div class="compare-card-caption"><div><span>02 / CABINET TRANSFORMATION</span><h3>A new point of view.</h3></div><p>See the change from original cabinetry to an updated finished space.</p></div></article>
 </div></div></section>
-
 <section class="portfolio" id="work">
 <div class="container">
 <div class="section-label">
@@ -560,8 +521,8 @@
 <figure>
 <div class="photo" data-delay="0" data-motion="photo">
 <a aria-label="Enlarge Before photograph of Kitchen transformation, built in phases" class="comparison-link" href="#compare-photo-1">
-<img alt="Before photograph of Kitchen transformation, built in phases" decoding="async" height="1152" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/kitchen-phased-before.webp" srcset="assets/kitchen-phased-before-480.webp 480w, assets/kitchen-phased-before-800.webp 800w, assets/kitchen-phased-before.webp 1536w" width="1536"/>
-</a>
+<img alt="Before photograph of Kitchen transformation, built in phases" decoding="async" height="1152" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/kitchen-phased-before.webp" srcset="assets/kitchen-phased-before-480.webp 480w, assets/kitchen-phased-before-800.webp 800w, assets/kitchen-phased-before.webp 1536w" width="1536">
+</img></a>
 <span class="zoom-hint">
           ↗ TAP TO ENLARGE
          </span>
@@ -578,8 +539,8 @@
 <figure>
 <div class="photo" data-delay="90" data-motion="photo">
 <a aria-label="Enlarge After photograph of Kitchen transformation, built in phases" class="comparison-link" href="#compare-photo-2">
-<img alt="After photograph of Kitchen transformation, built in phases" decoding="async" height="1536" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/kitchen-phased-after.webp" srcset="assets/kitchen-phased-after-480.webp 480w, assets/kitchen-phased-after-800.webp 800w, assets/kitchen-phased-after.webp 1152w" width="1152"/>
-</a>
+<img alt="After photograph of Kitchen transformation, built in phases" decoding="async" height="1536" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/kitchen-phased-after.webp" srcset="assets/kitchen-phased-after-480.webp 480w, assets/kitchen-phased-after-800.webp 800w, assets/kitchen-phased-after.webp 1152w" width="1152">
+</img></a>
 <span class="zoom-hint">
           ↗ TAP TO ENLARGE
          </span>
@@ -619,8 +580,8 @@
 <figure>
 <div class="photo" data-delay="0" data-motion="photo">
 <a aria-label="Enlarge Before photograph of A fresh direction for an existing kitchen" class="comparison-link" href="#compare-photo-3">
-<img alt="Before photograph of A fresh direction for an existing kitchen" decoding="async" height="1536" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/gray-kitchen-before.webp" srcset="assets/gray-kitchen-before-480.webp 480w, assets/gray-kitchen-before-800.webp 800w, assets/gray-kitchen-before.webp 1152w" width="1152"/>
-</a>
+<img alt="Before photograph of A fresh direction for an existing kitchen" decoding="async" height="1536" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/gray-kitchen-before.webp" srcset="assets/gray-kitchen-before-480.webp 480w, assets/gray-kitchen-before-800.webp 800w, assets/gray-kitchen-before.webp 1152w" width="1152">
+</img></a>
 <span class="zoom-hint">
           ↗ TAP TO ENLARGE
          </span>
@@ -637,8 +598,8 @@
 <figure>
 <div class="photo" data-delay="90" data-motion="photo">
 <a aria-label="Enlarge After photograph of A fresh direction for an existing kitchen" class="comparison-link" href="#compare-photo-4">
-<img alt="After photograph of A fresh direction for an existing kitchen" decoding="async" height="1448" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/gray-kitchen-after.webp" srcset="assets/gray-kitchen-after-480.webp 480w, assets/gray-kitchen-after-800.webp 800w, assets/gray-kitchen-after.webp 1086w" width="1086"/>
-</a>
+<img alt="After photograph of A fresh direction for an existing kitchen" decoding="async" height="1448" loading="lazy" sizes="(max-width:760px) calc((100vw - 84px)/2), (max-width:1250px) 45vw, 580px" src="assets/gray-kitchen-after.webp" srcset="assets/gray-kitchen-after-480.webp 480w, assets/gray-kitchen-after-800.webp 800w, assets/gray-kitchen-after.webp 1086w" width="1086">
+</img></a>
 <span class="zoom-hint">
           ↗ TAP TO ENLARGE
          </span>
@@ -929,15 +890,15 @@
         After: bathroom remodel
        </span>
 </a>
-<a class="gallery-item gallery-added" href="#new-photo-1" aria-label="Enlarge: Before · Shaker cabinet transformation"><img src="assets/new-shaker-before.webp" alt="Before · Shaker cabinet transformation" loading="lazy" decoding="async"><span class="gallery-caption">Before · Shaker cabinet transformation</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-2" aria-label="Enlarge: After · New Shaker doors and black hardware"><img src="assets/new-shaker-after.webp" alt="After · New Shaker doors and black hardware" loading="lazy" decoding="async"><span class="gallery-caption">After · New Shaker doors and black hardware</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-3" aria-label="Enlarge: Cabinet transformation · Sink wall"><img src="assets/new-shaker-sink.webp" alt="Cabinet transformation · Sink wall" loading="lazy" decoding="async"><span class="gallery-caption">Cabinet transformation · Sink wall</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-4" aria-label="Enlarge: Geometric accent wall · Full view"><img src="assets/new-accent-front.webp" alt="Geometric accent wall · Full view" loading="lazy" decoding="async"><span class="gallery-caption">Geometric accent wall · Full view</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-5" aria-label="Enlarge: Geometric accent wall · Detail"><img src="assets/new-accent-angle.webp" alt="Geometric accent wall · Detail" loading="lazy" decoding="async"><span class="gallery-caption">Geometric accent wall · Detail</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-6" aria-label="Enlarge: Before · Outdoor walkway"><img src="assets/new-walkway-before.webp" alt="Before · Outdoor walkway" loading="lazy" decoding="async"><span class="gallery-caption">Before · Outdoor walkway</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-7" aria-label="Enlarge: Walkway · Stepping stones installed"><img src="assets/new-walkway-during.webp" alt="Walkway · Stepping stones installed" loading="lazy" decoding="async"><span class="gallery-caption">Walkway · Stepping stones installed</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-8" aria-label="Enlarge: After · Walkway and landscaping"><img src="assets/new-walkway-after.webp" alt="After · Walkway and landscaping" loading="lazy" decoding="async"><span class="gallery-caption">After · Walkway and landscaping</span></a>
-<a class="gallery-item gallery-added" href="#new-photo-9" aria-label="Enlarge: Finished walkway · Alternate view"><img src="assets/new-walkway-detail.webp" alt="Finished walkway · Alternate view" loading="lazy" decoding="async"><span class="gallery-caption">Finished walkway · Alternate view</span></a></div>
+<a aria-label="Enlarge: Before · Shaker cabinet transformation" class="gallery-item gallery-added" href="#new-photo-1"><img alt="Before · Shaker cabinet transformation" decoding="async" loading="lazy" src="assets/new-shaker-before.webp"/><span class="gallery-caption">Before · Shaker cabinet transformation</span></a>
+<a aria-label="Enlarge: After · New Shaker doors and black hardware" class="gallery-item gallery-added" href="#new-photo-2"><img alt="After · New Shaker doors and black hardware" decoding="async" loading="lazy" src="assets/new-shaker-after.webp"/><span class="gallery-caption">After · New Shaker doors and black hardware</span></a>
+<a aria-label="Enlarge: Cabinet transformation · Sink wall" class="gallery-item gallery-added" href="#new-photo-3"><img alt="Cabinet transformation · Sink wall" decoding="async" loading="lazy" src="assets/new-shaker-sink.webp"/><span class="gallery-caption">Cabinet transformation · Sink wall</span></a>
+<a aria-label="Enlarge: Geometric accent wall · Full view" class="gallery-item gallery-added" href="#new-photo-4"><img alt="Geometric accent wall · Full view" decoding="async" loading="lazy" src="assets/new-accent-front.webp"/><span class="gallery-caption">Geometric accent wall · Full view</span></a>
+<a aria-label="Enlarge: Geometric accent wall · Detail" class="gallery-item gallery-added" href="#new-photo-5"><img alt="Geometric accent wall · Detail" decoding="async" loading="lazy" src="assets/new-accent-angle.webp"/><span class="gallery-caption">Geometric accent wall · Detail</span></a>
+<a aria-label="Enlarge: Before · Outdoor walkway" class="gallery-item gallery-added" href="#new-photo-6"><img alt="Before · Outdoor walkway" decoding="async" loading="lazy" src="assets/new-walkway-before.webp"/><span class="gallery-caption">Before · Outdoor walkway</span></a>
+<a aria-label="Enlarge: Walkway · Stepping stones installed" class="gallery-item gallery-added" href="#new-photo-7"><img alt="Walkway · Stepping stones installed" decoding="async" loading="lazy" src="assets/new-walkway-during.webp"/><span class="gallery-caption">Walkway · Stepping stones installed</span></a>
+<a aria-label="Enlarge: After · Walkway and landscaping" class="gallery-item gallery-added" href="#new-photo-8"><img alt="After · Walkway and landscaping" decoding="async" loading="lazy" src="assets/new-walkway-after.webp"/><span class="gallery-caption">After · Walkway and landscaping</span></a>
+<a aria-label="Enlarge: Finished walkway · Alternate view" class="gallery-item gallery-added" href="#new-photo-9"><img alt="Finished walkway · Alternate view" decoding="async" loading="lazy" src="assets/new-walkway-detail.webp"/><span class="gallery-caption">Finished walkway · Alternate view</span></a></div>
 <p class="gallery-note">
       Authentic photos from P&amp;D projects. Tap a photo to view it larger.
      </p>
@@ -993,15 +954,13 @@
      </a>
 </div>
 </section>
-
-<section class="craft-journey" id="journey" aria-labelledby="journey-title"><div class="container"><span class="section-label">THE PEOPLE BEHIND THE PRECISION / 03</span><div class="journey-head"><h2 class="section-title" id="journey-title">Crafted for the space.<br><em>Built for the way you live.</em></h2><p class="body-copy">Every custom project starts with a conversation and ends in the details you use every day. Here's the approach behind P&amp;D craftsmanship.</p></div><div class="journey-steps">
-<article class="journey-step"><img src="assets/pantry-before.webp" alt="Real project space before custom pantry cabinetry" loading="lazy"><div><span>01 / THE VISION</span><h3>Listen &amp; measure</h3><p>We start with your space, goals, measurements and the details that matter to you.</p></div></article>
-<article class="journey-step"><img src="assets/pantry-kitchen-wide.webp" alt="Finished custom pantry fitted into an existing kitchen" loading="lazy"><div><span>02 / THE PLAN</span><h3>Design to fit</h3><p>Cabinet proportions, practical storage and materials are considered together.</p></div></article>
-<article class="journey-step"><img src="assets/new-shaker-sink.webp" alt="Real P&D kitchen cabinet door and sink-area workmanship detail" loading="lazy"><div><span>03 / THE CRAFT</span><h3>Build with precision</h3><p>From door styles and plywood cabinetry to drawers and custom pieces, attention goes into the fit.</p></div></article>
-<article class="journey-step"><img src="assets/gray-kitchen-after.webp" alt="Real finished kitchen cabinetry with fitted doors and hardware" loading="lazy"><div><span>04 / THE FINISH</span><h3>Refine every detail</h3><p>Preparation, coatings, hardware alignment and final adjustments bring the vision together.</p></div></article>
-<article class="journey-step"><img src="assets/pantry-drawers.webp" alt="Completed P&D pull-out drawer storage within custom pantry" loading="lazy"><div><span>05 / THE REVEAL</span><h3>Made to be lived in</h3><p>See how the finished space looks, opens, stores and works every day.</p></div></article>
+<section aria-labelledby="journey-title" class="craft-journey" id="journey"><div class="container"><span class="section-label">THE PEOPLE BEHIND THE PRECISION / 03</span><div class="journey-head"><h2 class="section-title" id="journey-title">Crafted for the space.<br/><em>Built for the way you live.</em></h2><p class="body-copy">Every custom project starts with a conversation and ends in the details you use every day. Here's the approach behind P&amp;D craftsmanship.</p></div><div class="journey-steps">
+<article class="journey-step"><img alt="Real project space before custom pantry cabinetry" loading="lazy" src="assets/pantry-before.webp"/><div><span>01 / THE VISION</span><h3>Listen &amp; measure</h3><p>We start with your space, goals, measurements and the details that matter to you.</p></div></article>
+<article class="journey-step"><img alt="Finished custom pantry fitted into an existing kitchen" loading="lazy" src="assets/pantry-kitchen-wide.webp"/><div><span>02 / THE PLAN</span><h3>Design to fit</h3><p>Cabinet proportions, practical storage and materials are considered together.</p></div></article>
+<article class="journey-step"><img alt="Real P&amp;D kitchen cabinet door and sink-area workmanship detail" loading="lazy" src="assets/new-shaker-sink.webp"/><div><span>03 / THE CRAFT</span><h3>Build with precision</h3><p>From door styles and plywood cabinetry to drawers and custom pieces, attention goes into the fit.</p></div></article>
+<article class="journey-step"><img alt="Real finished kitchen cabinetry with fitted doors and hardware" loading="lazy" src="assets/gray-kitchen-after.webp"/><div><span>04 / THE FINISH</span><h3>Refine every detail</h3><p>Preparation, coatings, hardware alignment and final adjustments bring the vision together.</p></div></article>
+<article class="journey-step"><img alt="Completed P&amp;D pull-out drawer storage within custom pantry" loading="lazy" src="assets/pantry-drawers.webp"/><div><span>05 / THE REVEAL</span><h3>Made to be lived in</h3><p>See how the finished space looks, opens, stores and works every day.</p></div></article>
 </div><p class="journey-note">All photographs are genuine P&amp;D project images used to illustrate the approach, not staged step-by-step construction documentation.</p></div></section>
-
 <section class="process-section" id="process">
 <div class="container process-wrap">
 <div>
@@ -1010,9 +969,9 @@
       </div>
 <h2 class="section-title" data-motion="heading">
        From the first idea
-       <br/>
+       <br>
        to the final detail.
-      </h2>
+      </br></h2>
 <p class="body-copy" data-motion="copy">
        A great result starts with understanding the space and what you want it to become.
       </p>
@@ -1076,9 +1035,7 @@
 </div>
 </div>
 </section>
-
-<section id="quote-builder" class="quote-builder" aria-labelledby="quote-title"><div class="container quote-layout"><div class="quote-intro"><span class="section-label">LET'S GET THE DETAILS RIGHT / 04</span><h2 id="quote-title" class="section-title">A great project starts with <em>a clear plan.</em></h2><p class="body-copy">Tell us what you have in mind. Your selections from the 3D studio are included automatically, and you can add measurements and inspiration.</p><div class="quote-points"><p>✓ Cabinetry, doors, kitchens &amp; remodeling</p><p>✓ Custom work tailored to your space</p><p>✓ Direct conversation with P&amp;D</p></div><div class="quote-side-photo"><img src="assets/pantry-open.webp" alt="Real P&D custom pantry built-in cabinetry" loading="lazy"></div></div><form class="quote-form" id="pd-quote-form"><div class="quote-form-top"><span>YOUR PROJECT BRIEF</span><span>01—04</span></div><div class="quote-fieldrow"><label>YOUR NAME <input type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Your full name"></label><label>EMAIL <input type="email" name="email" autocomplete="email" required maxlength="200" placeholder="you@example.com"></label></div><div class="quote-fieldrow"><label>PHONE <input type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="(254) 555-0100"></label><label>PROJECT ZIP CODE <input type="text" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" title="Enter a 5-digit ZIP code" required placeholder="76541"></label></div><label>WHAT KIND OF PROJECT?<select name="project" required><option value="Custom cabinetry and cabinet doors">Custom cabinetry / doors</option><option value="Kitchen remodel">Kitchen remodel</option><option value="Bathroom remodel">Bathroom remodel</option><option value="Countertops and backsplash">Countertops &amp; backsplash</option><option value="Other remodeling">Other remodeling</option></select></label><label>YOUR GOALS, APPROXIMATE DIMENSIONS &amp; TIMELINE<textarea name="details" required minlength="10" maxlength="3000" rows="5" placeholder="Tell us about your project, existing space, measurements, timeline and anything else we should know..."></textarea></label><label>INSPIRATION PHOTO (OPTIONAL)<input name="photos" id="quote-photo" type="file" accept="image/*" multiple><small>Photos are not uploaded here. Attach them manually to the email draft when it opens.</small></label><label class="quote-consent"><input name="consent" type="checkbox" required><span>I'm happy for P&amp;D Build&amp;Remodel to contact me about this inquiry.</span></label><div class="quote-design-data" id="quote-design-data"><strong>3D studio design</strong><span id="quote-design-value">No design added yet. You're welcome to submit without one.</span></div><button class="button quote-submit" type="submit">OPEN MY EMAIL WITH PROJECT DETAILS ↗</button><p class="quote-note" id="quote-status" aria-live="polite">We'll prepare a complete email draft for you to review and send. This static website doesn't collect or transmit your information automatically.</p></form></div></section>
-
+<section aria-labelledby="quote-title" class="quote-builder" id="quote-builder"><div class="container quote-layout"><div class="quote-intro"><span class="section-label">LET'S GET THE DETAILS RIGHT / 04</span><h2 class="section-title" id="quote-title">A great project starts with <em>a clear plan.</em></h2><p class="body-copy">Tell us what you have in mind. Your selections from the 3D studio are included automatically, and you can add measurements and inspiration.</p><div class="quote-points"><p>✓ Cabinetry, doors, kitchens &amp; remodeling</p><p>✓ Custom work tailored to your space</p><p>✓ Direct conversation with P&amp;D</p></div><div class="quote-side-photo"><img alt="Real P&amp;D custom pantry built-in cabinetry" loading="lazy" src="assets/pantry-open.webp"/></div></div><form class="quote-form" id="pd-quote-form"><div class="quote-form-top"><span>YOUR PROJECT BRIEF</span><span>01—04</span></div><div class="quote-fieldrow"><label>YOUR NAME <input autocomplete="name" maxlength="100" name="name" placeholder="Your full name" required="" type="text"/></label><label>EMAIL <input autocomplete="email" maxlength="200" name="email" placeholder="you@example.com" required="" type="email"/></label></div><div class="quote-fieldrow"><label>PHONE <input autocomplete="tel" maxlength="40" name="phone" placeholder="(254) 555-0100" type="tel"/></label><label>PROJECT ZIP CODE <input inputmode="numeric" maxlength="5" name="zip" pattern="[0-9]{5}" placeholder="76541" required="" title="Enter a 5-digit ZIP code" type="text"/></label></div><label>WHAT KIND OF PROJECT?<select name="project" required=""><option value="Custom cabinetry and cabinet doors">Custom cabinetry / doors</option><option value="Kitchen remodel">Kitchen remodel</option><option value="Bathroom remodel">Bathroom remodel</option><option value="Countertops and backsplash">Countertops &amp; backsplash</option><option value="Other remodeling">Other remodeling</option></select></label><label>YOUR GOALS, APPROXIMATE DIMENSIONS &amp; TIMELINE<textarea maxlength="3000" minlength="10" name="details" placeholder="Tell us about your project, existing space, measurements, timeline and anything else we should know..." required="" rows="5"></textarea></label><label>INSPIRATION PHOTO (OPTIONAL)<input accept="image/*" id="quote-photo" multiple="" name="photos" type="file"/><small>Photos are not uploaded here. Attach them manually to the email draft when it opens.</small></label><label class="quote-consent"><input name="consent" required="" type="checkbox"/><span>I'm happy for P&amp;D Build&amp;Remodel to contact me about this inquiry.</span></label><div class="quote-design-data" id="quote-design-data"><strong>3D studio design</strong><span id="quote-design-value">No design added yet. You're welcome to submit without one.</span></div><button class="button quote-submit" type="submit">OPEN MY EMAIL WITH PROJECT DETAILS ↗</button><p aria-live="polite" class="quote-note" id="quote-status">We'll prepare a complete email draft for you to review and send. This static website doesn't collect or transmit your information automatically.</p></form></div></section>
 <section class="contact" id="contact">
 <div class="container">
 <div class="eyebrow">
@@ -1113,7 +1070,7 @@
 </section>
 </main>
 <footer class="footer">
-<div class="container footer-grid">
+<div class="container footer-grid"><img alt="P&amp;D Build&amp;Remodel logo" class="footer-brand-logo" height="412" loading="lazy" src="assets/pd-logo.png" width="500"/>
 <div>
 <strong>
       P&amp;D Build&amp;Remodel
@@ -1144,7 +1101,7 @@
 </div>
 </div>
 </footer>
-<div class="mobile-actionbar" aria-label="Quick contact"><a href="tel:+12545357623">☎ Call</a><a href="sms:+12545357623">✉ Text</a><a href="#quote-builder">Get a Quote ↗</a></div>
+<div aria-label="Quick contact" class="mobile-actionbar"><a href="tel:+12545357623">☎ Call</a><a href="sms:+12545357623">✉ Text</a><a href="#quote-builder">Get a Quote ↗</a></div>
 <div aria-labelledby="photo-1-caption" class="photo-modal" id="photo-1" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
 <span class="modal-count js-only">
@@ -1161,11 +1118,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="The custom pantry with its doors open" decoding="async" height="1536" loading="eager" src="assets/pantry-open.webp" width="1152"/>
+<img alt="The custom pantry with its doors open" decoding="async" height="1536" loading="eager" src="assets/pantry-open.webp" width="1152">
 <p id="photo-1-caption">
      The custom pantry with its doors open
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="photo-2-caption" class="photo-modal" id="photo-2" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1183,11 +1140,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Custom shelving and pull-out trays" decoding="async" height="1536" loading="eager" src="assets/pantry-trays.webp" width="1152"/>
+<img alt="Custom shelving and pull-out trays" decoding="async" height="1536" loading="eager" src="assets/pantry-trays.webp" width="1152">
 <p id="photo-2-caption">
      Custom shelving and pull-out trays
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="photo-3-caption" class="photo-modal" id="photo-3" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1205,11 +1162,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Deep lower drawers extended" decoding="async" height="1536" loading="eager" src="assets/pantry-drawers.webp" width="1152"/>
+<img alt="Deep lower drawers extended" decoding="async" height="1536" loading="eager" src="assets/pantry-drawers.webp" width="1152">
 <p id="photo-3-caption">
      Deep lower drawers extended
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-1-caption" class="photo-modal" id="compare-photo-1" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1227,11 +1184,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Before photograph of Kitchen transformation, built in phases" decoding="async" height="1152" loading="eager" src="assets/kitchen-phased-before.webp" width="1536"/>
+<img alt="Before photograph of Kitchen transformation, built in phases" decoding="async" height="1152" loading="eager" src="assets/kitchen-phased-before.webp" width="1536">
 <p id="compare-photo-1-caption">
      Before photograph of Kitchen transformation, built in phases
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-2-caption" class="photo-modal" id="compare-photo-2" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1249,11 +1206,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="After photograph of Kitchen transformation, built in phases" decoding="async" height="1536" loading="eager" src="assets/kitchen-phased-after.webp" width="1152"/>
+<img alt="After photograph of Kitchen transformation, built in phases" decoding="async" height="1536" loading="eager" src="assets/kitchen-phased-after.webp" width="1152">
 <p id="compare-photo-2-caption">
      After photograph of Kitchen transformation, built in phases
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-3-caption" class="photo-modal" id="compare-photo-3" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1271,11 +1228,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Before photograph of A fresh direction for an existing kitchen" decoding="async" height="1536" loading="eager" src="assets/gray-kitchen-before.webp" width="1152"/>
+<img alt="Before photograph of A fresh direction for an existing kitchen" decoding="async" height="1536" loading="eager" src="assets/gray-kitchen-before.webp" width="1152">
 <p id="compare-photo-3-caption">
      Before photograph of A fresh direction for an existing kitchen
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-4-caption" class="photo-modal" id="compare-photo-4" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1293,11 +1250,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="After photograph of A fresh direction for an existing kitchen" decoding="async" height="1448" loading="eager" src="assets/gray-kitchen-after.webp" width="1086"/>
+<img alt="After photograph of A fresh direction for an existing kitchen" decoding="async" height="1448" loading="eager" src="assets/gray-kitchen-after.webp" width="1086">
 <p id="compare-photo-4-caption">
      After photograph of A fresh direction for an existing kitchen
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-5-caption" class="photo-modal" id="compare-photo-5" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1315,11 +1272,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Before photograph of A bathroom rebuilt with purpose" decoding="async" height="1536" loading="eager" src="assets/bathroom-during-repair.webp" width="1152"/>
+<img alt="Before photograph of A bathroom rebuilt with purpose" decoding="async" height="1536" loading="eager" src="assets/bathroom-during-repair.webp" width="1152">
 <p id="compare-photo-5-caption">
      Before photograph of A bathroom rebuilt with purpose
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-6-caption" class="photo-modal" id="compare-photo-6" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1337,11 +1294,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="After photograph of A bathroom rebuilt with purpose" decoding="async" height="1536" loading="eager" src="assets/bathroom-after.webp" width="1152"/>
+<img alt="After photograph of A bathroom rebuilt with purpose" decoding="async" height="1536" loading="eager" src="assets/bathroom-after.webp" width="1152">
 <p id="compare-photo-6-caption">
      After photograph of A bathroom rebuilt with purpose
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-7-caption" class="photo-modal" id="compare-photo-7" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1359,11 +1316,11 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="Before photograph of From an ordinary doorway to custom storage" decoding="async" height="1536" loading="eager" src="assets/pantry-before.webp" width="1152"/>
+<img alt="Before photograph of From an ordinary doorway to custom storage" decoding="async" height="1536" loading="eager" src="assets/pantry-before.webp" width="1152">
 <p id="compare-photo-7-caption">
      Before photograph of From an ordinary doorway to custom storage
     </p>
-</div>
+</img></div>
 </div>
 <div aria-labelledby="compare-photo-8-caption" class="photo-modal" id="compare-photo-8" role="dialog" tabindex="-1">
 <div class="modal-toolbar">
@@ -1381,20 +1338,20 @@
     </a>
 </div>
 <div class="modal-inner">
-<img alt="After photograph of From an ordinary doorway to custom storage" decoding="async" height="1536" loading="eager" src="assets/pantry-closed.webp" width="1152"/>
+<img alt="After photograph of From an ordinary doorway to custom storage" decoding="async" height="1536" loading="eager" src="assets/pantry-closed.webp" width="1152">
 <p id="compare-photo-8-caption">
      After photograph of From an ordinary doorway to custom storage
     </p>
+</img></div>
 </div>
-</div>
-<div class="photo-modal" id="new-photo-1" role="dialog" tabindex="-1" aria-label="Before · Shaker cabinet transformation"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-shaker-before.webp" alt="Before · Shaker cabinet transformation" loading="lazy"><p>Before · Shaker cabinet transformation</p></div></div>
-<div class="photo-modal" id="new-photo-2" role="dialog" tabindex="-1" aria-label="After · New Shaker doors and black hardware"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-shaker-after.webp" alt="After · New Shaker doors and black hardware" loading="lazy"><p>After · New Shaker doors and black hardware</p></div></div>
-<div class="photo-modal" id="new-photo-3" role="dialog" tabindex="-1" aria-label="Cabinet transformation · Sink wall"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-shaker-sink.webp" alt="Cabinet transformation · Sink wall" loading="lazy"><p>Cabinet transformation · Sink wall</p></div></div>
-<div class="photo-modal" id="new-photo-4" role="dialog" tabindex="-1" aria-label="Geometric accent wall · Full view"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-accent-front.webp" alt="Geometric accent wall · Full view" loading="lazy"><p>Geometric accent wall · Full view</p></div></div>
-<div class="photo-modal" id="new-photo-5" role="dialog" tabindex="-1" aria-label="Geometric accent wall · Detail"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-accent-angle.webp" alt="Geometric accent wall · Detail" loading="lazy"><p>Geometric accent wall · Detail</p></div></div>
-<div class="photo-modal" id="new-photo-6" role="dialog" tabindex="-1" aria-label="Before · Outdoor walkway"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-walkway-before.webp" alt="Before · Outdoor walkway" loading="lazy"><p>Before · Outdoor walkway</p></div></div>
-<div class="photo-modal" id="new-photo-7" role="dialog" tabindex="-1" aria-label="Walkway · Stepping stones installed"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-walkway-during.webp" alt="Walkway · Stepping stones installed" loading="lazy"><p>Walkway · Stepping stones installed</p></div></div>
-<div class="photo-modal" id="new-photo-8" role="dialog" tabindex="-1" aria-label="After · Walkway and landscaping"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-walkway-after.webp" alt="After · Walkway and landscaping" loading="lazy"><p>After · Walkway and landscaping</p></div></div>
-<div class="photo-modal" id="new-photo-9" role="dialog" tabindex="-1" aria-label="Finished walkway · Alternate view"><div class="modal-toolbar"><a class="modal-close" href="#gallery" aria-label="Close enlarged photo">✕ Close</a></div><div class="modal-inner"><img src="assets/new-walkway-detail.webp" alt="Finished walkway · Alternate view" loading="lazy"><p>Finished walkway · Alternate view</p></div></div>
+<div aria-label="Before · Shaker cabinet transformation" class="photo-modal" id="new-photo-1" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Before · Shaker cabinet transformation" loading="lazy" src="assets/new-shaker-before.webp"/><p>Before · Shaker cabinet transformation</p></div></div>
+<div aria-label="After · New Shaker doors and black hardware" class="photo-modal" id="new-photo-2" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="After · New Shaker doors and black hardware" loading="lazy" src="assets/new-shaker-after.webp"/><p>After · New Shaker doors and black hardware</p></div></div>
+<div aria-label="Cabinet transformation · Sink wall" class="photo-modal" id="new-photo-3" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Cabinet transformation · Sink wall" loading="lazy" src="assets/new-shaker-sink.webp"/><p>Cabinet transformation · Sink wall</p></div></div>
+<div aria-label="Geometric accent wall · Full view" class="photo-modal" id="new-photo-4" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Geometric accent wall · Full view" loading="lazy" src="assets/new-accent-front.webp"/><p>Geometric accent wall · Full view</p></div></div>
+<div aria-label="Geometric accent wall · Detail" class="photo-modal" id="new-photo-5" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Geometric accent wall · Detail" loading="lazy" src="assets/new-accent-angle.webp"/><p>Geometric accent wall · Detail</p></div></div>
+<div aria-label="Before · Outdoor walkway" class="photo-modal" id="new-photo-6" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Before · Outdoor walkway" loading="lazy" src="assets/new-walkway-before.webp"/><p>Before · Outdoor walkway</p></div></div>
+<div aria-label="Walkway · Stepping stones installed" class="photo-modal" id="new-photo-7" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Walkway · Stepping stones installed" loading="lazy" src="assets/new-walkway-during.webp"/><p>Walkway · Stepping stones installed</p></div></div>
+<div aria-label="After · Walkway and landscaping" class="photo-modal" id="new-photo-8" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="After · Walkway and landscaping" loading="lazy" src="assets/new-walkway-after.webp"/><p>After · Walkway and landscaping</p></div></div>
+<div aria-label="Finished walkway · Alternate view" class="photo-modal" id="new-photo-9" role="dialog" tabindex="-1"><div class="modal-toolbar"><a aria-label="Close enlarged photo" class="modal-close" href="#gallery">✕ Close</a></div><div class="modal-inner"><img alt="Finished walkway · Alternate view" loading="lazy" src="assets/new-walkway-detail.webp"/><p>Finished walkway · Alternate view</p></div></div>
 </body>
 </html>
