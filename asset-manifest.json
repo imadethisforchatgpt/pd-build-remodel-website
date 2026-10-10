@@ -1,0 +1,266 @@
+{
+  "kitchen-phased-after": {
+    "source": "IMG_3686(2).jpeg",
+    "source_sha256": "b759a22bf0a7e400712954f7bcfde85ce197cbb6216dc30f2fe131280bb173c8",
+    "file": "kitchen-phased-after.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 312904,
+    "variants": [
+      {
+        "file": "kitchen-phased-after-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 51692
+      },
+      {
+        "file": "kitchen-phased-after-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 136544
+      }
+    ]
+  },
+  "pantry-kitchen-wide": {
+    "source": "20251007_192114.jpeg",
+    "source_sha256": "4c0a9e2e6b76cec47589b8ad07d2d9480d12fed8f0d5e382a6a83b08f51749ee",
+    "file": "pantry-kitchen-wide.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 359016,
+    "variants": [
+      {
+        "file": "pantry-kitchen-wide-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 47966
+      },
+      {
+        "file": "pantry-kitchen-wide-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 138028
+      }
+    ]
+  },
+  "gray-kitchen-after": {
+    "source": "1CD714A8-3729-4079-8ED2-ADB017139E56.jpeg",
+    "source_sha256": "d5ab72037f06f697ae513311aac2175ac0b6b8c9115e961d2d2b0ce014e195e9",
+    "file": "gray-kitchen-after.webp",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 237890,
+    "variants": [
+      {
+        "file": "gray-kitchen-after-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 42202
+      },
+      {
+        "file": "gray-kitchen-after-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 107376
+      }
+    ]
+  },
+  "bathroom-after": {
+    "source": "20240302_131614.jpeg",
+    "source_sha256": "4ad9abb4442feb608980734508c37c085b0d5bf0b9ea4ab5db5d73f8456df387",
+    "file": "bathroom-after.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 287846,
+    "variants": [
+      {
+        "file": "bathroom-after-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 40892
+      },
+      {
+        "file": "bathroom-after-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 113642
+      }
+    ]
+  },
+  "pantry-drawers": {
+    "source": "20251007_192212.jpeg",
+    "source_sha256": "8cbd9c8af9a22877e603e53f1a88f0fc055b5f4cb08c3825232b84fde5e45cb8",
+    "file": "pantry-drawers.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 315210,
+    "variants": [
+      {
+        "file": "pantry-drawers-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 55442
+      },
+      {
+        "file": "pantry-drawers-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 136174
+      }
+    ]
+  },
+  "kitchen-phased-before": {
+    "source": "20240813_180006.jpeg",
+    "source_sha256": "920da63943755e6515c833b947316fc5fbcf0d624e0163302adc34e57d88b122",
+    "file": "kitchen-phased-before.webp",
+    "width": 1536,
+    "height": 1152,
+    "bytes": 321652,
+    "variants": [
+      {
+        "file": "kitchen-phased-before-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 30530
+      },
+      {
+        "file": "kitchen-phased-before-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 78270
+      }
+    ]
+  },
+  "gray-kitchen-before": {
+    "source": "IMG_2253.jpeg",
+    "source_sha256": "615ade52e133165261d26ee55cef7cff33530903d2a6fc3e48786fcceb9d2faf",
+    "file": "gray-kitchen-before.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 308202,
+    "variants": [
+      {
+        "file": "gray-kitchen-before-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 60368
+      },
+      {
+        "file": "gray-kitchen-before-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 139860
+      }
+    ]
+  },
+  "bathroom-during-repair": {
+    "source": "20240221_084801.jpeg",
+    "source_sha256": "2107d6d3a48726b29dc26fa6c58e16065a171052b86504692530ad180a41ca70",
+    "file": "bathroom-during-repair.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 416548,
+    "variants": [
+      {
+        "file": "bathroom-during-repair-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 71312
+      },
+      {
+        "file": "bathroom-during-repair-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 186956
+      }
+    ]
+  },
+  "pantry-before": {
+    "source": "IMG_20251007_203817.jpeg",
+    "source_sha256": "aa5461e785e2dbd06aef41de68810566da0e39f55ce97ed190633d461ac6067e",
+    "file": "pantry-before.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 228670,
+    "variants": [
+      {
+        "file": "pantry-before-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 35882
+      },
+      {
+        "file": "pantry-before-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 85628
+      }
+    ]
+  },
+  "pantry-closed": {
+    "source": "20251007_193527.jpeg",
+    "source_sha256": "8a7be8bac681855d9e1e937942ac8253ade2ee3fd60263402ec01465b1e6eb7f",
+    "file": "pantry-closed.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 470970,
+    "variants": [
+      {
+        "file": "pantry-closed-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 59968
+      },
+      {
+        "file": "pantry-closed-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 184044
+      }
+    ]
+  },
+  "pantry-trays": {
+    "source": "20251007_192154.jpeg",
+    "source_sha256": "e54cb44999e2be0df26bbeb177ea9a084c5c070cbcdf958ae18add4958fb8a65",
+    "file": "pantry-trays.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 344482,
+    "variants": [
+      {
+        "file": "pantry-trays-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 45634
+      },
+      {
+        "file": "pantry-trays-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 127876
+      }
+    ]
+  },
+  "pantry-open": {
+    "source": "20251007_190457.jpeg",
+    "source_sha256": "1c2b9c32f2ae0a9f51c0527dcf98d1f6ce44b1130959df31fe2bbc7486f714dc",
+    "file": "pantry-open.webp",
+    "width": 1152,
+    "height": 1536,
+    "bytes": 291900,
+    "variants": [
+      {
+        "file": "pantry-open-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 45940
+      },
+      {
+        "file": "pantry-open-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 123450
+      }
+    ]
+  }
+}

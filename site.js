@@ -348,20 +348,10 @@
 (function(){'use strict';
  function initCinema(){
  var stage=document.querySelector('.cinema-stage'), after=document.querySelector('.cinema-stage-sticky');
- if(stage&&after){var queued=false,manual=false;var slider=document.getElementById('cinema-mobile-slider');function setReveal(v){after.style.setProperty('--reveal',Number(v).toFixed(4));if(slider&&!manual)slider.value=Math.round(v*100);}if(slider){slider.addEventListener('input',function(){manual=true;setReveal(Number(slider.value)/100);});slider.addEventListener('change',function(){manual=true;});}function update(){queued=false;var rect=stage.getBoundingClientRect(),distance=Math.max(1,stage.offsetHeight-innerHeight);var p=Math.max(0,Math.min(1,-rect.top/distance));if(!manual) setReveal(Math.max(0,Math.min(1,(p-.12)/.76)));}function tick(){if(!queued){queued=true;requestAnimationFrame(update);}}addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick,{passive:true});addEventListener('pageshow',tick);tick();}
+ if(stage&&after){var queued=false;function update(){queued=false;var rect=stage.getBoundingClientRect(),distance=Math.max(1,stage.offsetHeight-innerHeight);var p=Math.max(0,Math.min(1,-rect.top/distance));after.style.setProperty('--reveal',Math.max(0,Math.min(1,(p-.12)/.76)).toFixed(4));}function tick(){if(!queued){queued=true;requestAnimationFrame(update);}}addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick,{passive:true});addEventListener('pageshow',tick);tick();}
  var shell=document.getElementById('cabinet-shell'), doors=document.getElementById('cabinet-toggle'),drawer=document.getElementById('drawer-toggle');
  if(shell&&doors){doors.addEventListener('click',function(){var open=shell.classList.toggle('is-open');doors.setAttribute('aria-pressed',String(open));doors.textContent=open?'CLOSE THE CABINET ↗':'OPEN THE CABINET ↗';});}
  if(shell&&drawer){drawer.addEventListener('click',function(){var open=shell.classList.toggle('drawer-open');drawer.setAttribute('aria-pressed',String(open));drawer.textContent=open?'CLOSE THE DRAWER ↗':'PULL THE DRAWER ↗';});}
- // Direct touch targets: tapping the illustrated doors or drawer works on phones.
- if(shell&&doors&&drawer){
-  function activate(button){button.click();}
-  shell.querySelectorAll('.cabinet-door').forEach(function(el){
-   el.addEventListener('click',function(){activate(doors);});
-  });
-  var face=shell.querySelector('.cabinet-drawer-face');
-  if(face)face.addEventListener('click',function(){activate(drawer);});
- }
-
 }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initCinema,{once:true});else initCinema();
 })();
