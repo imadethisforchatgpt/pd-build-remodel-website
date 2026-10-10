@@ -329,3 +329,12 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-stamp-tagline{font-size:clamp(9px,1.2vw,13px);font-weight:800;letter-spacing:.13em;color:#ead5ab;text-shadow:0 2px 5px #000}
 .footer-brand-logo{width:100px;height:86px;object-fit:contain;display:block;margin-right:8px;flex:none}
 @media(max-width:760px){.hero-brand-lockup{gap:9px}.hero-brand-lockup img{width:66px;height:57px}.hero-brand-words strong{font-size:14px}.hero-brand-words span{font-size:9px}.footer-brand-logo{width:78px;height:68px;margin-bottom:16px}}
+
+/* P&D maker mark on the animated cabinet drawer front */
+.cabinet-drawer-face{overflow:hidden}
+.cabinet-drawer-brand{position:absolute;z-index:4;left:50%;bottom:2px;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:5px;min-width:142px;max-width:90%;padding:1px 8px 2px;background:linear-gradient(90deg,#0a1b2cc9,#142d42e8,#0a1b2cc9);border:1px solid #c2a36c80;border-radius:5px;box-shadow:0 1px 5px #0009;pointer-events:none}
+.cabinet-drawer-brand img{display:block;width:28px;height:23px;object-fit:contain;flex:none}
+.cabinet-drawer-brand span{display:flex;flex-direction:column;align-items:flex-start;gap:1px;white-space:nowrap;color:#efd6a4}
+.cabinet-drawer-brand strong{font:700 10px/1 Georgia,serif;letter-spacing:.11em}
+.cabinet-drawer-brand small{font:700 6px/1.25 Arial,sans-serif;letter-spacing:.08em}
+@media(max-width:760px){.cabinet-drawer-brand{gap:4px;padding:0 5px;min-width:115px;bottom:1px}.cabinet-drawer-brand img{width:22px;height:19px}.cabinet-drawer-brand strong{font-size:9px}.cabinet-drawer-brand small{font-size:5px}}
