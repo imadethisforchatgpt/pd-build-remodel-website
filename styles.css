@@ -371,3 +371,11 @@ html.motion-paused .button,html.motion-paused .showroom-card img,html.motion-pau
 .cabinet-drawer-reveal img{width:100%!important;height:auto!important;max-height:150px;object-fit:contain;mix-blend-mode:screen;filter:none!important;}
 .cabinet-drawer-reveal span{display:none!important;}
 @media(max-width:760px){.cabinet-drawer-reveal{width:min(75%,190px)!important}.cabinet-drawer-reveal img{width:100%!important;height:auto!important}}
+
+/* Cabinet experience: one restrained drawer logo, readable door-interior motto. */
+.cabinet-dishes{top:24%!important;left:7%!important;right:7%!important;width:auto!important;z-index:1!important;}
+.cabinet-stamp-tagline{display:block!important;font-size:clamp(12px,2.6vw,20px)!important;letter-spacing:.12em!important;line-height:1.5!important;text-align:center!important;}
+.cabinet-drawer-reveal{left:50%!important;bottom:calc(100% - 2px)!important;width:clamp(100px,40%,160px)!important;max-width:160px!important;max-height:115px!important;overflow:hidden!important;z-index:6!important;}
+.cabinet-drawer-reveal img{display:block!important;width:100%!important;max-width:160px!important;height:105px!important;max-height:105px!important;object-fit:contain!important;}
+.cabinet-drawer-brand{display:none!important;}
+@media(max-width:760px){.cabinet-drawer-reveal{width:130px!important;max-width:45%!important}.cabinet-drawer-reveal img{height:95px!important;max-height:95px!important}}
